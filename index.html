@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de População por Continente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulação de População por Continente</h1>
+        <div id="inputs">
+            <label for="ano">Digite o ano:</label>
+            <input type="number" id="ano">
+            
+            <label for="asia">População da Ásia:</label>
+            <input type="number" id="asia" step="0.01">
+            
+            <label for="africa">População da África:</label>
+            <input type="number" id="africa" step="0.01">
+            
+            <label for="america">População da América:</label>
+            <input type="number" id="america" step="0.01">
+            
+            <label for="europa">População da Europa:</label>
+            <input type="number" id="europa" step="0.01">
+            
+            <label for="oceania">População da Oceania:</label>
+            <input type="number" id="oceania" step="0.01">
+            
+            <label for="p_asia">Aumento percentual da Ásia:</label>
+            <input type="number" id="p_asia" step="0.01">
+            
+            <label for="p_africa">Aumento percentual da África:</label>
+            <input type="number" id="p_africa" step="0.01">
+            
+            <label for="p_america">Aumento percentual da América:</label>
+            <input type="number" id="p_america" step="0.01">
+            
+            <label for="p_europa">Aumento percentual da Europa:</label>
+            <input type="number" id="p_europa" step="0.01">
+            
+            <label for="p_oceania">Aumento percentual da Oceania:</label>
+            <input type="number" id="p_oceania" step="0.01">
+            
+            <button onclick="calcularPopulacao()">Calcular</button>
+            <button onclick="exibirHistorico()">Exibir Histórico</button>
+        </div>
+
+        <div id="result"></div>
+        <div id="historico"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
